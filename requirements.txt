@@ -1,0 +1,4 @@
+streamlit==1.27.2  # Replace with the latest version if necessary
+transformers==4.33.2  # Replace with the latest version if necessary
+torch==2.0.1  # Required by transformers for deep learning models
+pyttsx3==2.90  # Library for text-to-speech conversion
