@@ -4,7 +4,8 @@ import pyttsx3
 import os
 
 # Initialize the summarization pipeline with a more advanced model
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn", force_download=True)
+
 
 def get_book_summary(book_name, author_name, min_words=200):
     prompt = f"Summarize the book '{book_name}' by {author_name}."
